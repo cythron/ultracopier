@@ -12,7 +12,7 @@
 language: cpp
 
 os:
-  - linux
+  - windows
 
 compiler:
   - clang
