@@ -1,0 +1,39 @@
+/* -*- mode: C++ ; c-file-style: "stroustrup" -*- *****************************
+ * Ultracopier
+ *
+ * This library is free software; you can redistribute it and/or
+ * modify it under the terms of the GPLv3
+ *****************************************************************************/
+
+/*
+  This file contains NO source code, just some documentation for doxygen to
+  parse.
+*/
+
+/*!
+  \mainpage Ultracopier
+
+  \section mainpage_overview Overview
+
+  Ultracopier provide an advanced copier with play/pause/resume, with advanced management like playlist.
+  This documentation is FOR DEVELOPMENT, use <a href="http://ultracopier-wiki.first-world.info/">the wiki of ultracopier</a> for end user documentation, general documentation, algorithm documentation.
+
+  \section mainpage_platforms Platforms
+
+  Ultracopier might be usable in all environments where you find Qt 5.\n
+  Ultracopier requires Qt 5.4 or newer. Tested on Qt 5.4.
+
+  \section mainpage_downloads Downloads
+
+  Stable releases are available at the Ultracopier
+  <a href="http://ultracopier.first-world.info/">project page</a>.
+
+  \section license GPL Version 3
+  The core, and some default plugin are under GPL Version 3. See into each part to see the license.\n
+  document-save.png -> all SystemTrayIcon/systray_* (color alteration) done by png manipulation of KDE's oxygen icon pack.\n
+  From 16x16/actions/: arrow-down.png -> moveDown.png,  arrow-up.png -> moveUp.png \n
+  All Ultracopier are from devices/drive-removable-media-usb.png, and same icon with U is touched by gimp.\n
+  from 128x128: actions/application-exit.png -> none-128x128.png, apps/kbugbuster.png -> bug-128x128.png
+
+*/
+

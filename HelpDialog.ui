@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>HelpDialog</class>
+ <widget class="QDialog" name="HelpDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>681</width>
+    <height>389</height>
+   </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777214</height>
+   </size>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="resources/ultracopier-resources.qrc">
+    <normaloff>:/ultracopier-16x16.png</normaloff>:/ultracopier-16x16.png</iconset>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <property name="sizeConstraint">
+      <enum>QLayout::SetMinimumSize</enum>
+     </property>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="minimumSize">
+        <size>
+         <width>128</width>
+         <height>128</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>128</width>
+         <height>128</height>
+        </size>
+       </property>
+       <property name="pixmap">
+        <pixmap resource="resources/ultracopier-resources.qrc">:/ultracopier-128x128.png</pixmap>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="label_ultracopier">
+         <property name="font">
+          <font>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string notr="true">Ultracopier %1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_description">
+         <property name="text">
+          <string extracomment="%1 will be replaced by a variable content (normal, debug, ...)">Based on Qt. Advanced utility to copy files under GPL3 license.
+This version is compiled as version: %1.</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_site">
+         <property name="text">
+          <string extracomment="%1 will be remplaced by the website into the corresponding languages">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;For more information see the website &lt;a href=&quot;%1&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0057ae;&quot;&gt;%1&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_platform">
+         <property name="text">
+          <string extracomment="%1 will be replaced by the platform (windows, mac, linux, ...)">Platform: %1</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_2">
+         <property name="text">
+          <string>Author: BRULE Herman Jacques Roger (alpha_one_x86), company: &lt;a href=&quot;http://www.confiared.com/&quot;&gt;confiared&lt;/a&gt;</string>
+         </property>
+         <property name="openExternalLinks">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QLineEdit" name="lineEditInsertDebug">
+     <property name="toolTip">
+      <string notr="true">Insert debug note to annotate some special action at current time</string>
+     </property>
+     <property name="statusTip">
+      <string notr="true">Insert debug note to annotate some special action at current time</string>
+     </property>
+     <property name="placeholderText">
+      <string notr="true">Insert debug note to annotate some special action at current time</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QTreeView" name="debugView">
+     <property name="rootIsDecorated">
+      <bool>false</bool>
+     </property>
+     <property name="uniformRowHeights">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayoutButton">
+     <item>
+      <widget class="QPushButton" name="pushButtonAboutQt">
+       <property name="text">
+        <string>About Qt</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QLabel" name="status"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="checkUpdate">
+       <property name="text">
+        <string>Check update</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCrash">
+       <property name="text">
+        <string>Do a crash</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonSaveBugReport">
+       <property name="text">
+        <string>Save bug report</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonClose">
+       <property name="text">
+        <string>Close</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>debugView</tabstop>
+  <tabstop>lineEditInsertDebug</tabstop>
+  <tabstop>pushButtonAboutQt</tabstop>
+  <tabstop>pushButtonSaveBugReport</tabstop>
+  <tabstop>pushButtonClose</tabstop>
+ </tabstops>
+ <resources>
+  <include location="resources/ultracopier-resources.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pushButtonClose</sender>
+   <signal>clicked()</signal>
+   <receiver>HelpDialog</receiver>
+   <slot>hide()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>387</x>
+     <y>216</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>329</x>
+     <y>212</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
